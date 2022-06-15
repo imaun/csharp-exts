@@ -178,4 +178,28 @@ public static class CollectionExts
         => source?.LongCount(predicate!) ?? 0;
 
     
+    /// <summary>
+    /// Concatenates the elements of an IEnumerable, using the specified separator between each element
+    /// </summary>
+    /// <param name="separator">
+    /// The string to use as a separator. separator is included in the returned string
+    /// only if values has more than one element/
+    /// </param>
+    /// <exception cref="System.ArgumentNullException">if values is null</exception>
+    /// <returns>
+    /// A string that consists of the elements of values delimited by the separator string.
+    /// If values is an empty IEnumerable, the method returns String.Empty.
+    /// </returns>
+    [DebuggerStepThrough]
+    public static string Join<T>(this IEnumerable<T> source, string separator)
+    {
+        if (source == null)
+        {
+            return string.Empty;
+        }
+
+        return string.Join(separator, source.Select(e => e.ToString()).ToArray());
+    }
+
+    
 }
