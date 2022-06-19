@@ -1,9 +1,30 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <TargetFramework>netstandard2.0;net451;net60</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
-
+  <PropertyGroup>
+    <PackageId>Roonia.Extensions</PackageId>
+    <Title>Roonia Extensions Library</Title>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Iman Nemati</Authors>
+    <Company>Roonia</Company>
+    <PackageProjectUrl>https://github.com/Roonia/exts</PackageProjectUrl>
+    <Description>A simple package with common helper & extenions methods to prevent duplication of codes in every projects.</Description>
+    <Summary>A simple package with common helper & extenions methods to prevent duplication of codes in every projects.</Summary>
+    <RepositoryUrl>https://github.com/Roonia/exts</RepositoryUrl>
+    <PackageTags>guard extensions helper</PackageTags>
+    <PackageReleaseNotes>
+    Initial release
+    </PackageReleaseNotes>
+    <Version>0.0.1</Version>
+    <AssemblyName>Roonia.Extensions</AssemblyName>
+    <PackageIcon>icon.png</PackageIcon>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+  </PropertyGroup>
 </Project>
